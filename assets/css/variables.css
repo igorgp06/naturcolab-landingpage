@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+:root {
+    /* substituição das cores padrões bootstrap */
+    --bs-primary: var(--DarkKhaki);
+    --bs-secondary: var(--OliveDrab);
+    --bs-success: var(--BurlyWood);
+    --bs-info: var(--SkyBlue);
+    --bs-warning: var(--CadetBlue);
+    --bs-danger: var(--white);
+    --bs-light: var(--black);
+
+    /* nova palheta de cores */
+    --DarkKhaki: rgba(178, 197, 104, 1);
+    --OliveDrab: rgba(120, 147, 66, 1);
+    --BurlyWood: rgba(236, 193, 153, 1);
+    --SkyBlue: rgba(118, 193, 195, 1);
+    --CadetBlue: rgba(84, 141, 149, 1);
+}
+
+
