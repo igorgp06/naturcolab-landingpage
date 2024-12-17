@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url(style.css);
+@import url(responsive.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
     /* substituição das cores padrões bootstrap */
     --bs-primary: var(--DarkKhaki);
@@ -7,8 +11,6 @@
     --bs-success: var(--BurlyWood);
     --bs-info: var(--SkyBlue);
     --bs-warning: var(--CadetBlue);
-    --bs-danger: var(--white);
-    --bs-light: var(--black);
 
     /* nova palheta de cores */
     --DarkKhaki: rgba(178, 197, 104, 1);
@@ -16,6 +18,36 @@
     --BurlyWood: rgba(236, 193, 153, 1);
     --SkyBlue: rgba(118, 193, 195, 1);
     --CadetBlue: rgba(84, 141, 149, 1);
+
+    /* fontes */
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-principal: 'Plus Jakarta Sans', Arial, Helvetica sans-serif;
 }
 
+.DarkKhaki {
+    color: var(--DarkKhaki);
+}
 
+.OliveDrab {
+    color: var(--OliveDrab);
+}
+
+.BurlyWood {
+    color: var(--BurlyWood);
+}
+
+.SkyBlue {
+    color: var(--SkyBlue);
+}
+
+.CadetBlue {
+    color: var(--CadetBlue);
+}
+
+.fonte-padrao {
+    font-family: var(--fonte-padrao);
+}
+
+.fonte-principal {
+    font-family: var(--fonte-principal);
+}
