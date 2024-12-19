@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- TODO : Colocar o favicon -->
+    <!-- TODO : fazer o favicon -->
     <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -25,6 +25,9 @@
         }
     </style>
 </head>
+
+<!-- PROBEMAS GLOBAIS -->
+<!-- TODO: (ANALISAR E CORRIGIR) acreditas que o ícone do menu está quenrando a responsividade em telas menores que 498px -->
 
 <body>
     <header id="header" class="header py-3 shadow-sm">
@@ -107,7 +110,7 @@
                             commodi aliquam maxime.
                         </p>
                     </div>
-                </div>
+                </div> <!-- TODO: (CORRIGIR) o texto do carrosel some em telas menores que 769px -->
                 <div class="col-lg-6 releases-img-container">
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
@@ -204,7 +207,46 @@
         </div>
     </section>
 
-
+    <section class="loc-contact" id="loc-contact">
+        <h2 class="display-4 contact-title">Localização e Contato</h2>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-map-container d-flex flex-column align-items-center">
+                        <h3 class="display-6 contact-subtitle">Nossa localização</h3>
+                        <!-- TODO: (CORRIGIR) o mapa quebra em telas menores que 558px -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439.83465571803384!2d-48.6497623!3d-28.1258643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526cc3d2aa0466b%3A0x26fc06f38cb41ff5!2sNatur!5e0!3m2!1spt-BR!2sbr!4v1734633495545!5m2!1spt-BR!2sbr"
+                            width="500" height="450" style="border:0;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-text-container d-flex flex-column align-items-center">
+                        <h3 class="display-6 contact-subtitle">Contato e Redes Sociais</h3>
+                        <div class="container-contact-texo">
+                            <p class="contact-text">Número: (48) 988374177</p>
+                            <p class="contact-text">kk_katarina@hotmail.com</p>
+                            <p class="contact-text">Av. Porto Novo - Ibiraquera, Imbituba - SC, 88780-000</p>
+                        </div>
+                        <div class="container-contact-icons">
+                            <p class="icons-contact-text">Nossa Redes Sociais</p>
+                            <a href="https://www.instagram.com/naturcolab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank">
+                                <i class="fa-brands fa-instagram contact-icons"></i>
+                            </a>
+                            <a href="https://www.facebook.com/store.natur" target="_blank">
+                                <i class="fa-brands fa-facebook contact-icons"></i>
+                            </a>
+                            <a href="https://maps.app.goo.gl/HGgtWsQoBTynFfPdA" target="_blank">
+                                <i class="fa-solid fa-location-dot contact-icons"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
