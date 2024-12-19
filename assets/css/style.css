@@ -116,8 +116,8 @@ section {
     font-size: 2.2rem;
     right: 0;
     top: 0;
-    margin: 1.3rem auto;
-    margin-right: 1rem;
+    margin-top: 1.7rem;
+    margin-right: 1.4rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
@@ -159,15 +159,21 @@ section {
     font-size: 1.8rem;
 }
 
-/* main */
+/* hero */
 
 .hero {
     padding-top: 72px;
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: var(--DarkKhaki);
-    min-height: 100vh;
+    min-height: 90vh;    
+    background-image: url(../static/images/natur_ft3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative; /* TODO: corrigir a imagem, melhorar a qualidade e formato  */
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
 }
 
 .hero .hero-text-container {
@@ -175,10 +181,19 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: var(--SkyBlue); /* TODO: corrigir a cor e o fundo da caixa/cor */
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero .hero-text-container:hover {
+    box-shadow: 2px 2px 0 var(--BurlyWood);
 }
 
 .hero .hero-title {
-    font-size: 2.2rem;
     text-align: center;
     font-weight: 650;
     font-family: var(--fonte-principal);
@@ -190,7 +205,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.3rem;  /* TODO: fazer com que o texto fique acima da imagem de fundo e contralizar ele de acordo com o tamanho da tela e imagem */
 }
 
 .hero #hero-container-img {
@@ -203,7 +218,7 @@ section {
     margin-left: 3rem;
     height: 100%;
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;   /* TODO: fazer com que a imagem ocupe 100% da vh na seção hero */
 }
 
 .hero .hero-img:hover {
@@ -221,15 +236,14 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 55vh;
 }
 
 .about .about-title {
-    font-weight: 550;
+    font-weight: 600;
     text-align: center;
     font-family: var(--fonte-principal);
-    margin-bottom: 1.5rem;
-    padding: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .about .about-img-container {
@@ -264,3 +278,95 @@ section {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.182);
     color: black;
 }
+
+/* produtos e coleções */
+
+.prod-colect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--DarkKhaki);
+    padding: 2rem 0;
+}
+
+.prod-colect .prod-colect-title {
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1rem;
+}
+
+.prod-colect .prod-colect-subtitle {
+    font-weight: 550;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    font-size: 1.5rem;
+}
+
+/* releases */
+
+.releases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 2rem 0;
+}
+
+.releases .releases-title {
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1rem;
+}
+
+.releases .releases-subtitle {
+    font-weight: 550;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.releases-text {
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0 auto;
+    padding: 1rem;
+    color: black;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.grid-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+

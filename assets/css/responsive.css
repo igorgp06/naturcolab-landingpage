@@ -67,3 +67,15 @@
         display: block;
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        padding: 2rem 0;
+    }
+    
+    .hero .hero-text-container {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
