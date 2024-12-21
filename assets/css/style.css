@@ -180,9 +180,7 @@ section {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    /* TODO: corrigir a imagem, melhorar a qualidade e formato */
     background-repeat: no-repeat;
-    /* TODO: a responsividade da imagem quebra no tamanho maior ou igual a 496px */
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
 }
 
