@@ -1,2 +1,2 @@
 # naturcolab-landingpage
-Uma landing paga para uma nova de roupas chamada Natur
+Uma landing paga para uma loja de roupas chamada Natur
