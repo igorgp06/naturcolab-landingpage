@@ -80,6 +80,26 @@
     }
 }
 
+/* prod-colect */
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        display: block !important;
+        font-size: 0.9rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.350);
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+
 /* loc-contact */
 
 @media (max-width: 1200px) {

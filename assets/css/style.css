@@ -292,6 +292,13 @@ section {
     font-family: var(--fonte-principal);
 }
 
+.carousel-caption {
+    font-size: 0.9rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.400);
+    border-radius: 8px;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
